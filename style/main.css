@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Calibi';
+  src: url('/fonts/calibri/woff2/Calibri-Regular.woff2') format('woff2'),
+    url('/fonts/calibri/ttf/Calibri-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Calibi';
+  src: url('/fonts/calibri/woff2/Calibri-Italic.woff2') format('woff2'),
+    url('/fonts/calibri/ttf/Calibri-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Calibi';
+  src: url('/fonts/calibri/woff2/Calibri-Bold.woff2') format('woff2'),
+    url('/fonts/calibri/ttf/Calibri-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Calibi';
+  src: url('/fonts/calibri/woff2/Calibri-Bold-Italic.woff2') format('woff2'),
+    url('/fonts/calibri/ttf/Calibri-Bold-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+}
+
+.cv-wrapper {
+  background-color: white;
+  width: 21cm;
+  height: 29.7cm;
+}
+
+/* .header__list, */
+.header__contacts-list,
+.header__name-list {
+  list-style-type: none;
+}
+
+.header {
+  padding: 38px 26px 38px 52px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  color: rgb(197, 160, 122);
+}
+
+.header__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+}
+
+.header__contacts-item svg {
+  fill: #c5a07a;
+  width: 13px;
+  height: 13px;
+}
+
+.contact-text {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+
+.contact-link {
+  display: inline-block;
+}
+
+.header__name-list {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-end;
+  margin-left: auto;
+  padding-top: 3px;
+  gap: 10px;
+}
+
+.name-list-item--name {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name-list-item--position {
+  font-size: 38px;
+}
+
+.header__photo-wrapper {
+  width: 110px;
+  height: 110px;
+  margin-top: -10px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 25px;
+  align-self: center;
+}
+
+.header__photo {
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  gap: 30px;
+  padding: 20px 26px 20px 52px;
+}
+
+.main-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-content-column--left {
+  min-width: 210px;
+}
+
+.main-content-column--right {
+  flex-grow: 1;
+}
+
+.content-entry__text-wrapper {
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.content-entry__text-wrapper--courses {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-content-column--left .designation {
+  margin-top: 5px;
+}
+
+.company,
+.designation {
+  margin-bottom: 5px;
+}
+
+.company-link {
+  color: inherit;
+}
+
+.company-link--course {
+  text-decoration: underline;
+}
+
+.content-entry__header {
+  border-bottom: 1px solid rgb(34, 34, 34);
+  margin-bottom: 8px;
+}
+
+.designation-date-wrapper,
+.company-location-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-list {
+  list-style: inside;
+  padding-left: 15px;
+}
+
+.ul-list--achievments {
+  padding-left: 0;
+}
+
+.ul-list li {
+  text-indent: -20px; /* Adjust the indentation to move the text to the left */
+  padding-left: 20px; /* Add inner padding to the text */
+}
