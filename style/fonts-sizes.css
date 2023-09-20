@@ -1,21 +1,25 @@
 .content-entry__header {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   font-weight: bold;
-  color: rgb(34, 34, 34);
 }
 
 .content-entry__text-wrapper {
   font-size: 14px;
   line-height: 18px;
-
 }
 
 .company,
 .designation,
 .date,
-.company-location {
+.company-location,
+.main-content-column--left .content-entry__text-wrapper {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.project-link {
   font-size: 16px;
 }
 
@@ -40,3 +44,11 @@
 /* .company {
   font-weight: bold;
 } */
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}

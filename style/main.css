@@ -121,7 +121,7 @@ body {
 
 .main-content {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
   padding: 20px 26px 20px 52px;
 }
 
@@ -137,6 +137,7 @@ body {
 
 .main-content-column--right {
   flex-grow: 1;
+justify-content: space-between;
 }
 
 .content-entry__text-wrapper {
@@ -146,7 +147,7 @@ body {
 .content-entry__text-wrapper--courses {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .main-content-column--left .designation {
@@ -158,8 +159,14 @@ body {
   margin-bottom: 5px;
 }
 
-.company-link {
+.company-link,
+.project-link {
   color: inherit;
+  text-decoration: underline;
+}
+
+.project-link {
+  font-weight: bold;
 }
 
 .company-link--course {
@@ -167,7 +174,8 @@ body {
 }
 
 .content-entry__header {
-  border-bottom: 1px solid rgb(34, 34, 34);
+  color: rgb(65, 41, 5);
+  border-bottom: 1px solid rgb(65, 41, 5);
   margin-bottom: 8px;
 }
 
@@ -189,4 +197,18 @@ body {
 .ul-list li {
   text-indent: -20px; /* Adjust the indentation to move the text to the left */
   padding-left: 20px; /* Add inner padding to the text */
+}
+
+.content-entry__text-wrapper--projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vertical-divider {
+  min-width: 15px;
+}
+
+.vertical-divider:nth-child(2) {
+  border-right: 1px solid rgb(65, 41, 5);
 }
